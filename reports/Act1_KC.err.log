@@ -1,0 +1,75 @@
+Traceback (most recent call last):
+  File "C:\Users\kamac\miniconda3\envs\data_viz\lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+    executenb(
+  File "C:\Users\kamac\miniconda3\envs\data_viz\lib\site-packages\nbclient\client.py", line 1305, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "C:\Users\kamac\miniconda3\envs\data_viz\lib\site-packages\jupyter_core\utils\__init__.py", line 166, in wrapped
+    return loop.run_until_complete(inner)
+  File "C:\Users\kamac\miniconda3\envs\data_viz\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "C:\Users\kamac\miniconda3\envs\data_viz\lib\site-packages\nbclient\client.py", line 705, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\kamac\miniconda3\envs\data_viz\lib\site-packages\nbclient\client.py", line 1058, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\kamac\miniconda3\envs\data_viz\lib\site-packages\nbclient\client.py", line 914, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+def arima_rolling(history: list, test: list, best_order: tuple) -> list:
+    predictions: list = []
+
+    for t in range(len(test)):
+        model: ARIMA = ARIMA(history, order=best_order)
+        model_fit: ARIMAResults = model.fit()
+        output: tuple = model_fit.forecast()
+        yhat: float = output[0]
+        predictions.append(yhat)
+        obs: float = test[t]
+        history.append(obs)
+        print('predicted=%f, expected=%f' % (yhat, obs))
+
+    return predictions
+
+train_list: list = train.tolist()
+
+print('ARIMA Rolling - Horizonte de 7 días.')
+test7: pd.DataFrame = stock_data.Close[train_size:train_size + 7]
+dates_test7: pd.DataFrame = stock_data.Date[train_size:train_size + 7]
+
+test7: list = test7.tolist()
+yhat7: list  = arima_rolling(train_list, test7, order)
+
+print('\nARIMA Rolling - Horizonte de 14 días.')
+test14: pd.DataFrame = stock_data.Close[train_size:train_size + 14]
+dates_test14: pd.DataFrame = stock_data.Date[train_size:train_size + 14]
+
+test14: list = test14.tolist()
+yhat14: list  = arima_rolling(train_list, test14, order)
+
+print('\nARIMA Rolling - Horizonte de 21 días.')
+test21: pd.DataFrame = stock_data.Close[train_size:train_size + 21]
+dates_test21: pd.DataFrame = stock_data.Date[train_size:train_size + 21]
+
+test21: list = test21.tolist()
+yhat21: list  = arima_rolling(train_list, test21, order)
+
+print('\nARIMA Rolling - Horizonte de 28 días')
+test28: list = test28.tolist()
+yhat28: list = arima_rolling(train_list, test28, order)
+------------------
+
+----- stdout -----
+ARIMA Rolling - Horizonte de 7 días.
+------------------
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mNameError[0m                                 Traceback (most recent call last)
+Cell [1;32mIn[32], line 19[0m
+[0;32m     16[0m train_list: [38;5;28mlist[39m [38;5;241m=[39m train[38;5;241m.[39mtolist()
+[0;32m     18[0m [38;5;28mprint[39m([38;5;124m'[39m[38;5;124mARIMA Rolling - Horizonte de 7 días.[39m[38;5;124m'[39m)
+[1;32m---> 19[0m test7: pd[38;5;241m.[39mDataFrame [38;5;241m=[39m [43mstock_data[49m[38;5;241m.[39mClose[train_size:train_size [38;5;241m+[39m [38;5;241m7[39m]
+[0;32m     20[0m dates_test7: pd[38;5;241m.[39mDataFrame [38;5;241m=[39m stock_data[38;5;241m.[39mDate[train_size:train_size [38;5;241m+[39m [38;5;241m7[39m]
+[0;32m     22[0m test7: [38;5;28mlist[39m [38;5;241m=[39m test7[38;5;241m.[39mtolist()
+
+[1;31mNameError[0m: name 'stock_data' is not defined
+
