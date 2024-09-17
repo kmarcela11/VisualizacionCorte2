@@ -431,7 +431,6 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"><strong>Gráficos de correlación</strong></a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones-criterio-bic"><strong>Conclusiones criterio BIC</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#criterio-hqic"><strong>Criterio HQIC</strong></a><ul class="nav section-nav flex-column">
@@ -448,7 +447,6 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16"><strong>Gráficos de correlación</strong></a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones-criterio-hqic"><strong>Conclusiones criterio HQIC</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones"><strong>Conclusiones</strong></a></li>
@@ -646,16 +644,6 @@ document.write(`
   </thead>
   <tbody>
     <tr>
-      <th>440</th>
-      <td>2024-09-09</td>
-      <td>17800.0</td>
-      <td>17500.0</td>
-      <td>17440.0</td>
-      <td>17440.0</td>
-      <td>17440.0</td>
-      <td>10034.0</td>
-    </tr>
-    <tr>
       <th>441</th>
       <td>2024-09-10</td>
       <td>17440.0</td>
@@ -695,6 +683,16 @@ document.write(`
       <td>18340.0</td>
       <td>27826.0</td>
     </tr>
+    <tr>
+      <th>445</th>
+      <td>2024-09-16</td>
+      <td>18340.0</td>
+      <td>18680.0</td>
+      <td>18400.0</td>
+      <td>18680.0</td>
+      <td>18680.0</td>
+      <td>31956.0</td>
+    </tr>
   </tbody>
 </table>
 </div></div></div>
@@ -707,17 +705,17 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 445 entries, 0 to 444
+RangeIndex: 446 entries, 0 to 445
 Data columns (total 7 columns):
  #   Column    Non-Null Count  Dtype         
 ---  ------    --------------  -----         
- 0   date      445 non-null    datetime64[ns]
- 1   open      437 non-null    float64       
- 2   high      437 non-null    float64       
- 3   low       437 non-null    float64       
- 4   close     437 non-null    float64       
- 5   adjclose  437 non-null    float64       
- 6   volume    437 non-null    float64       
+ 0   date      446 non-null    datetime64[ns]
+ 1   open      438 non-null    float64       
+ 2   high      438 non-null    float64       
+ 3   low       438 non-null    float64       
+ 4   close     438 non-null    float64       
+ 5   adjclose  438 non-null    float64       
+ 6   volume    438 non-null    float64       
 dtypes: datetime64[ns](1), float64(6)
 memory usage: 24.5 KB
 </pre></div>
@@ -731,7 +729,7 @@ memory usage: 24.5 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(445, 7)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(446, 7)
 </pre></div>
 </div>
 </div>
@@ -773,23 +771,23 @@ memory usage: 24.5 KB
   <tbody>
     <tr>
       <th>count</th>
-      <td>445</td>
-      <td>437.000000</td>
-      <td>437.000000</td>
-      <td>437.000000</td>
-      <td>437.000000</td>
-      <td>437.000000</td>
-      <td>4.370000e+02</td>
+      <td>446</td>
+      <td>438.000000</td>
+      <td>438.000000</td>
+      <td>438.000000</td>
+      <td>438.000000</td>
+      <td>438.000000</td>
+      <td>4.380000e+02</td>
     </tr>
     <tr>
       <th>mean</th>
-      <td>2023-11-08 00:00:00.000000256</td>
-      <td>20079.167482</td>
-      <td>20232.554209</td>
-      <td>19876.650319</td>
-      <td>20069.838762</td>
-      <td>19741.643485</td>
-      <td>9.217293e+05</td>
+      <td>2023-11-08 16:50:34.977578240</td>
+      <td>20075.196780</td>
+      <td>20229.009565</td>
+      <td>19873.278971</td>
+      <td>20066.665614</td>
+      <td>19739.219642</td>
+      <td>9.196979e+05</td>
     </tr>
     <tr>
       <th>min</th>
@@ -803,37 +801,37 @@ memory usage: 24.5 KB
     </tr>
     <tr>
       <th>25%</th>
-      <td>2023-06-06 00:00:00</td>
+      <td>2023-06-06 06:00:00</td>
       <td>18200.000000</td>
-      <td>18260.000000</td>
-      <td>17940.000000</td>
-      <td>18180.000000</td>
-      <td>17857.664062</td>
-      <td>8.930000e+03</td>
+      <td>18265.000000</td>
+      <td>17955.000000</td>
+      <td>18185.000000</td>
+      <td>17868.248047</td>
+      <td>8.950000e+03</td>
     </tr>
     <tr>
       <th>50%</th>
-      <td>2023-11-08 00:00:00</td>
+      <td>2023-11-08 12:00:00</td>
       <td>19900.000000</td>
       <td>20000.000000</td>
       <td>19800.000000</td>
       <td>19900.000000</td>
-      <td>19700.000000</td>
-      <td>2.392900e+04</td>
+      <td>19682.403320</td>
+      <td>2.419400e+04</td>
     </tr>
     <tr>
       <th>75%</th>
-      <td>2024-04-11 00:00:00</td>
-      <td>21440.000000</td>
+      <td>2024-04-11 18:00:00</td>
+      <td>21430.000000</td>
       <td>21600.000000</td>
       <td>21000.000000</td>
       <td>21460.000000</td>
       <td>21000.000000</td>
-      <td>5.583300e+04</td>
+      <td>5.561825e+04</td>
     </tr>
     <tr>
       <th>max</th>
-      <td>2024-09-13 00:00:00</td>
+      <td>2024-09-16 00:00:00</td>
       <td>28700.000000</td>
       <td>29000.000000</td>
       <td>28700.000000</td>
@@ -844,12 +842,12 @@ memory usage: 24.5 KB
     <tr>
       <th>std</th>
       <td>NaN</td>
-      <td>2885.007718</td>
-      <td>2920.552806</td>
-      <td>2830.601125</td>
-      <td>2906.466259</td>
-      <td>2590.568576</td>
-      <td>1.757356e+07</td>
+      <td>2882.902854</td>
+      <td>2918.152386</td>
+      <td>2828.240839</td>
+      <td>2903.898329</td>
+      <td>2588.100021</td>
+      <td>1.755349e+07</td>
     </tr>
   </tbody>
 </table>
@@ -887,7 +885,7 @@ memory usage: 24.5 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/abdb307622a37e0eac1c6e82396c18f1218a0fc3ac0a44a36e1f0f3c74cafa72.png" src="_images/abdb307622a37e0eac1c6e82396c18f1218a0fc3ac0a44a36e1f0f3c74cafa72.png" />
+<img alt="_images/a5d4f0cdbd55153dda393e9b941b305b9f12ce188b6143dab8b7dca0c724016a.png" src="_images/a5d4f0cdbd55153dda393e9b941b305b9f12ce188b6143dab8b7dca0c724016a.png" />
 </div>
 </div>
 <p>En la gráfica se observa una caída brusca en el precio al inicio del periodo, seguida de variaciones con una tendencia a la baja hasta finales de 2023. A partir de 2024, los precios muestran mayor volatilidad con algunos picos, aunque se mantiene la tendencia descendente. La serie temporal indica que los precios de la acción han experimentado cambios significativos, con una pérdida de valor general a lo largo del tiempo. Dada la variabilidad observada, parece que esta serie <strong>NO</strong> es estacionaria, ya que no muestra estabilidad a lo largo del periodo.</p>
@@ -902,7 +900,7 @@ memory usage: 24.5 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/8d8a457598dd8cc21d3ae499da657d04ff141ca9f55264510fdbc69cf440e0d0.png" src="_images/8d8a457598dd8cc21d3ae499da657d04ff141ca9f55264510fdbc69cf440e0d0.png" />
+<img alt="_images/b648fe0c0161863d30d636d54e23b3bf376c06f7f98ee6235ceb77116080e1c3.png" src="_images/b648fe0c0161863d30d636d54e23b3bf376c06f7f98ee6235ceb77116080e1c3.png" />
 </div>
 </div>
 <p>La gráfica de autocorrelación muestra que los primeros lags tienen una autocorrelación alta, lo que indica que los valores de la serie están fuertemente correlacionados en intervalos de tiempo cercanos. A medida que aumenta el número de lags, la autocorrelación disminuye de manera gradual, lo que sugiere que los valores más alejados en el tiempo tienen una relación más débil. Nótese que la mayoría de barras caen sobre la zona sombreada lo que indica que la correlación en estos valores NO es significativa.</p>
@@ -916,7 +914,7 @@ memory usage: 24.5 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/45129d00babbbf8c81d33c83c33637177fce377ac6c2e272aac43e12c7e61afa.png" src="_images/45129d00babbbf8c81d33c83c33637177fce377ac6c2e272aac43e12c7e61afa.png" />
+<img alt="_images/4584fa7614e5979ace72c9e7c3116e7364fa29008bba75d9d861ae713462b01e.png" src="_images/4584fa7614e5979ace72c9e7c3116e7364fa29008bba75d9d861ae713462b01e.png" />
 </div>
 </div>
 <p>La gráfica de autocorrelación parcial muestra que la relación entre el último día y el día anterior es bastante alta, casi perfecta, lo que sugiere una fuerte dependencia entre estos valores consecutivos. Sin embargo, a medida que se incrementan los lags, la autocorrelación parcial disminuye rápidamente, y los días posteriores muestran correlaciones muy bajas y poco significativas.</p>
@@ -936,8 +934,8 @@ memory usage: 24.5 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ADF Statistic: -2.387806
-p-value: 0.145208
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ADF Statistic: -2.412431
+p-value: 0.138259
 </pre></div>
 </div>
 </div>
@@ -979,7 +977,7 @@ p-value: 0.145208
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/967721ffce2b82c72589b8911aa02e2163394b943d2f517f2a284575c7a63827.png" src="_images/967721ffce2b82c72589b8911aa02e2163394b943d2f517f2a284575c7a63827.png" />
+<img alt="_images/1c72dc60924533dd555b1bba27b14b1ac9f8114a47e86e9f94160dd07837c7c4.png" src="_images/1c72dc60924533dd555b1bba27b14b1ac9f8114a47e86e9f94160dd07837c7c4.png" />
 </div>
 </div>
 <p>En el primer gráfico, el <strong>componente tendencial</strong> muestra una disminución general a lo largo del tiempo, con algunas variaciones menores. El segundo gráfico representa la <strong>estacionalidad</strong>, que exhibe un patrón repetitivo con una amplitud constante, lo que indica un comportamiento cíclico regular. Finalmente, el último gráfico muestra el <strong>ruido</strong>, compuesto por variaciones aleatorias sin un patrón definido, lo que sugiere que estos movimientos no pueden ser explicados ni por la tendencia ni por la estacionalidad.</p>
@@ -992,7 +990,7 @@ p-value: 0.145208
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>p-valor: 5.07656783913623e-13
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>p-valor: 1.8216363079502723e-10
 </pre></div>
 </div>
 </div>
@@ -1040,7 +1038,7 @@ p-value: 0.145208
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/9ab56ff59c16dc3049f7c0368c6bee18c9c22714e7cea6ecb30b84ca24d62c44.png" src="_images/9ab56ff59c16dc3049f7c0368c6bee18c9c22714e7cea6ecb30b84ca24d62c44.png" />
+<img alt="_images/e1326c5f2ffbda3f8107da32bd5be04f7249b24e2fa68c64c18e9cca172e9a3a.png" src="_images/e1326c5f2ffbda3f8107da32bd5be04f7249b24e2fa68c64c18e9cca172e9a3a.png" />
 </div>
 </div>
 <p>La gráfica muestra un indicio de normalidad significativa en el conjunto de datos residuales de Davivienda. Sin embargo, notamos que algunos residuos presentan una tendencia NO normal respecto al resto de datos de la muestra, lo cual confirma lo anteriormente dicho en la prueba de normalidad.</p>
@@ -1084,7 +1082,7 @@ p-value: 0.145208
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/5ca11b3aefabdd36b6b291c4ed6f1c22efc790c87c91117e61010fd2d0294cae.png" src="_images/5ca11b3aefabdd36b6b291c4ed6f1c22efc790c87c91117e61010fd2d0294cae.png" />
+<img alt="_images/d540692726738a749cb7e74adab8b267c9f0ace67bc983039ff1ab0d1504fd1d.png" src="_images/d540692726738a749cb7e74adab8b267c9f0ace67bc983039ff1ab0d1504fd1d.png" />
 </div>
 </div>
 <p>Después de aplicar el diferenciador de primer orden, la serie se vuelve más estacionaria, eliminando la tendencia a largo plazo. Esto se confirma en los gráficos ACF y PACF de la serie diferenciada, donde las correlaciones son más débiles, lo que indica que el proceso de diferenciación ha sido efectivo para eliminar la tendencia original y facilitar un análisis más claro de los cambios en los valores recientes.</p>
@@ -1099,7 +1097,7 @@ p-value: 0.145208
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ADF Statistic: -21.884707
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ADF Statistic: -21.871626
 p-value: 0.000000
 </pre></div>
 </div>
@@ -1134,7 +1132,7 @@ p-value: 0.000000
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Train: (415,)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Train: (416,)
 Test: (30,)
 </pre></div>
 </div>
@@ -1252,9 +1250,9 @@ Test: (30,)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mejor modelo basado en AIC: {&#39;best_aic&#39;: 6102.654170193955, &#39;best_order&#39;: (2, 1, 2), &#39;best_model&#39;: &lt;statsmodels.tsa.arima.model.ARIMAResultsWrapper object at 0x00000241EBBFCD90&gt;}
-Mejor modelo basado en BIC: {&#39;best_bic&#39;: 6107.9156381813345, &#39;best_order&#39;: (0, 1, 0), &#39;best_model&#39;: &lt;statsmodels.tsa.arima.model.ARIMAResultsWrapper object at 0x00000241EBCA3C10&gt;}
-Mejor modelo basado en HQIC: {&#39;best_hqic&#39;: 6105.481894605797, &#39;best_order&#39;: (0, 1, 0), &#39;best_model&#39;: &lt;statsmodels.tsa.arima.model.ARIMAResultsWrapper object at 0x00000241EBCA3C10&gt;}
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mejor modelo basado en AIC: {&#39;best_aic&#39;: 6116.535875902349, &#39;best_order&#39;: (2, 1, 2), &#39;best_model&#39;: &lt;statsmodels.tsa.arima.model.ARIMAResultsWrapper object at 0x000001B513489E80&gt;}
+Mejor modelo basado en BIC: {&#39;best_bic&#39;: 6121.753612384275, &#39;best_order&#39;: (0, 1, 0), &#39;best_model&#39;: &lt;statsmodels.tsa.arima.model.ARIMAResultsWrapper object at 0x000001B513996280&gt;}
+Mejor modelo basado en HQIC: {&#39;best_hqic&#39;: 6119.318256832274, &#39;best_order&#39;: (0, 1, 0), &#39;best_model&#39;: &lt;statsmodels.tsa.arima.model.ARIMAResultsWrapper object at 0x000001B513996280&gt;}
 </pre></div>
 </div>
 </div>
@@ -1378,7 +1376,7 @@ Mejor modelo basado en HQIC: {&#39;best_hqic&#39;: 6105.481894605797, &#39;best_
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/b36d026efb24019c5c2375f594c14847cf1582c56f8c81b34ae26428889b4df5.png" src="_images/b36d026efb24019c5c2375f594c14847cf1582c56f8c81b34ae26428889b4df5.png" />
+<img alt="_images/7bfef61b68ba4568a8762250efc3368fc52e7910040d208c63704d11a90e0bf5.png" src="_images/7bfef61b68ba4568a8762250efc3368fc52e7910040d208c63704d11a90e0bf5.png" />
 </div>
 </div>
 <p>Al ver la gráfica notamos que la cobertura que abarca el intervalo de confianza no es muy ancha. Lo que podría indicar una buena precisión en predecir los pronósticos.</p>
@@ -1404,82 +1402,82 @@ Mejor modelo basado en HQIC: {&#39;best_hqic&#39;: 6105.481894605797, &#39;best_
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ARIMA Rolling AIC- Horizonte de 7 días.
-predicho = 17988.715444, esperado = 18180.000000
-predicho = 18033.011105, esperado = 17800.000000
-predicho = 17778.966290, esperado = 17700.000000
-predicho = 17863.790963, esperado = 17700.000000
-predicho = 17657.776527, esperado = 17740.000000
-predicho = 17598.381982, esperado = 17520.000000
-predicho = 17623.330923, esperado = 17900.000000
+predicho = 18140.785452, esperado = 17800.000000
+predicho = 17795.836544, esperado = 17700.000000
+predicho = 17737.605384, esperado = 17700.000000
+predicho = 17692.860425, esperado = 17740.000000
+predicho = 17704.911249, esperado = 17520.000000
+predicho = 17548.283932, esperado = 17900.000000
+predicho = 17900.340217, esperado = 18380.000000
 
 ARIMA Rolling AIC - Horizonte de 14 días.
-predicho = 17986.888640, esperado = 18180.000000
-predicho = 18025.531645, esperado = 17800.000000
-predicho = 17783.210334, esperado = 17700.000000
-predicho = 17868.977793, esperado = 17700.000000
-predicho = 17650.945644, esperado = 17740.000000
-predicho = 17600.540945, esperado = 17520.000000
-predicho = 17630.967563, esperado = 17900.000000
-predicho = 17986.064407, esperado = 18380.000000
-predicho = 18212.313509, esperado = 18320.000000
-predicho = 18292.238475, esperado = 18500.000000
-predicho = 18667.956824, esperado = 18500.000000
-predicho = 18453.626678, esperado = 18500.000000
-predicho = 18357.209741, esperado = 18200.000000
-predicho = 18311.826173, esperado = 18140.000000
+predicho = 18334.989467, esperado = 17800.000000
+predicho = 17852.094975, esperado = 17700.000000
+predicho = 17722.523226, esperado = 17700.000000
+predicho = 17645.177097, esperado = 17740.000000
+predicho = 17729.790069, esperado = 17520.000000
+predicho = 17585.406315, esperado = 17900.000000
+predicho = 17867.564558, esperado = 18380.000000
+predicho = 18309.346571, esperado = 18320.000000
+predicho = 18377.774930, esperado = 18500.000000
+predicho = 18541.652146, esperado = 18500.000000
+predicho = 18439.719518, esperado = 18500.000000
+predicho = 18475.582271, esperado = 18200.000000
+predicho = 18277.802017, esperado = 18140.000000
+predicho = 18142.132774, esperado = 18300.000000
 
 ARIMA Rolling AIC - Horizonte de 21 días.
-predicho = 18242.690139, esperado = 18180.000000
-predicho = 18031.722230, esperado = 17800.000000
-predicho = 17772.930068, esperado = 17700.000000
-predicho = 17867.120801, esperado = 17700.000000
-predicho = 17661.760354, esperado = 17740.000000
-predicho = 17593.212329, esperado = 17520.000000
-predicho = 17621.913242, esperado = 17900.000000
-predicho = 17992.960608, esperado = 18380.000000
-predicho = 18218.793518, esperado = 18320.000000
-predicho = 18284.199996, esperado = 18500.000000
-predicho = 18665.458858, esperado = 18500.000000
-predicho = 18462.716135, esperado = 18500.000000
-predicho = 18355.682794, esperado = 18200.000000
-predicho = 18303.778338, esperado = 18140.000000
-predicho = 18247.007796, esperado = 18300.000000
-predicho = 18153.531757, esperado = 17940.000000
-predicho = 17903.885925, esperado = 17680.000000
-predicho = 17853.257681, esperado = 17700.000000
-predicho = 17671.412628, esperado = 17700.000000
-predicho = 17543.975451, esperado = 17400.000000
-predicho = 17499.838402, esperado = 17740.000000
+predicho = 18219.320028, esperado = 17800.000000
+predicho = 17849.341182, esperado = 17700.000000
+predicho = 17762.922039, esperado = 17700.000000
+predicho = 17638.481904, esperado = 17740.000000
+predicho = 17694.459410, esperado = 17520.000000
+predicho = 17600.953781, esperado = 17900.000000
+predicho = 17898.217507, esperado = 18380.000000
+predicho = 18282.193965, esperado = 18320.000000
+predicho = 18355.526229, esperado = 18500.000000
+predicho = 18570.827552, esperado = 18500.000000
+predicho = 18452.505555, esperado = 18500.000000
+predicho = 18445.895710, esperado = 18200.000000
+predicho = 18274.774301, esperado = 18140.000000
+predicho = 18171.323383, esperado = 18300.000000
+predicho = 18213.289393, esperado = 17940.000000
+predicho = 17955.137307, esperado = 17680.000000
+predicho = 17768.038183, esperado = 17700.000000
+predicho = 17660.219810, esperado = 17700.000000
+predicho = 17628.444570, esperado = 17400.000000
+predicho = 17472.421671, esperado = 17740.000000
+predicho = 17765.602723, esperado = 17800.000000
 
 ARIMA Rolling AIC - Horizonte de 28 días.
-predicho = 17846.618087, esperado = 18180.000000
-predicho = 18017.942521, esperado = 17800.000000
-predicho = 17764.339623, esperado = 17700.000000
-predicho = 17884.097678, esperado = 17700.000000
-predicho = 17662.795566, esperado = 17740.000000
-predicho = 17576.265187, esperado = 17520.000000
-predicho = 17627.809485, esperado = 17900.000000
-predicho = 18007.678786, esperado = 18380.000000
-predicho = 18207.592681, esperado = 18320.000000
-predicho = 18275.466728, esperado = 18500.000000
-predicho = 18680.647544, esperado = 18500.000000
-predicho = 18464.882504, esperado = 18500.000000
-predicho = 18339.592690, esperado = 18200.000000
-predicho = 18307.763143, esperado = 18140.000000
-predicho = 18262.451166, esperado = 18300.000000
-predicho = 18143.977234, esperado = 17940.000000
-predicho = 17894.430913, esperado = 17680.000000
-predicho = 17866.241580, esperado = 17700.000000
-predicho = 17666.750682, esperado = 17700.000000
-predicho = 17537.850916, esperado = 17400.000000
-predicho = 17502.644237, esperado = 17740.000000
-predicho = 17757.651820, esperado = 17800.000000
-predicho = 17821.341471, esperado = 17700.000000
-predicho = 17660.967467, esperado = 17800.000000
-predicho = 17815.791558, esperado = 17800.000000
-predicho = 17827.207198, esperado = 17440.000000
-predicho = 17385.420805, esperado = 17480.000000
-predicho = 17494.002068, esperado = 17620.000000
+predicho = 17726.361884, esperado = 17800.000000
+predicho = 17795.088933, esperado = 17700.000000
+predicho = 17775.395921, esperado = 17700.000000
+predicho = 17684.963166, esperado = 17740.000000
+predicho = 17671.426810, esperado = 17520.000000
+predicho = 17564.637017, esperado = 17900.000000
+predicho = 17927.276370, esperado = 18380.000000
+predicho = 18305.578827, esperado = 18320.000000
+predicho = 18322.466167, esperado = 18500.000000
+predicho = 18556.061943, esperado = 18500.000000
+predicho = 18519.975572, esperado = 18500.000000
+predicho = 18451.812601, esperado = 18200.000000
+predicho = 18244.331193, esperado = 18140.000000
+predicho = 18174.276104, esperado = 18300.000000
+predicho = 18239.430986, esperado = 17940.000000
+predicho = 17946.708910, esperado = 17680.000000
+predicho = 17750.040427, esperado = 17700.000000
+predicho = 17672.865319, esperado = 17700.000000
+predicho = 17724.614814, esperado = 17400.000000
+predicho = 17459.479217, esperado = 17740.000000
+predicho = 17756.269597, esperado = 17800.000000
+predicho = 17737.843929, esperado = 17700.000000
+predicho = 17707.609526, esperado = 17800.000000
+predicho = 17847.861753, esperado = 17800.000000
+predicho = 17780.586974, esperado = 17440.000000
+predicho = 17425.458820, esperado = 17480.000000
+predicho = 17495.891266, esperado = 17620.000000
+predicho = 17620.526141, esperado = 18200.000000
 </pre></div>
 </div>
 </div>
@@ -1524,7 +1522,7 @@ predicho = 17494.002068, esperado = 17620.000000
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/d4c7daf42dbd966dc6eb9ca0ce8db649cad877805d84fdc6e8c90c5d6e80f5b2.png" src="_images/d4c7daf42dbd966dc6eb9ca0ce8db649cad877805d84fdc6e8c90c5d6e80f5b2.png" />
+<img alt="_images/fc9c66caed27eee0ff454c4a206708d10d2161cba3f4b490b1a1ea7b41f9ddee.png" src="_images/fc9c66caed27eee0ff454c4a206708d10d2161cba3f4b490b1a1ea7b41f9ddee.png" />
 </div>
 </div>
 <p>En las gráficas se observan las predicciones del modelo ARIMA para diferentes horizontes de tiempo: 7, 14, 21 y 28 días. En todas ellas, la línea azul representa los datos de entrenamiento, la línea morada los datos de prueba, y la línea naranja muestra las predicciones del modelo. A medida que el horizonte de predicción se extiende, se puede ver cómo las predicciones siguen de cerca la tendencia de los datos reales, aunque la precisión disminuye ligeramente conforme aumenta el horizonte. Esto sugiere que el modelo ARIMA ha logrado ajustarse bien a los datos a corto plazo, pero puede perder algo de precisión al predecir en plazos más largos.</p>
@@ -1550,82 +1548,82 @@ predicho = 17494.002068, esperado = 17620.000000
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ARIMA sin Rolling AIC - Horizonte de 7 días.
-Predicho: 18336.501022687993, Observado: 18180.0
-Predicho: 18288.453832268886, Observado: 17800.0
-Predicho: 18270.162309649975, Observado: 17700.0
-Predicho: 18319.021663912583, Observado: 17700.0
-Predicho: 18320.656000818337, Observado: 17740.0
-Predicho: 18276.12738002089, Observado: 17520.0
-Predicho: 18288.188196688556, Observado: 17900.0
+Predicho: 18140.785452260676, Observado: 17800.0
+Predicho: 18117.522143842278, Observado: 17700.0
+Predicho: 18159.96247652562, Observado: 17700.0
+Predicho: 18168.04664144553, Observado: 17740.0
+Predicho: 18127.310026760493, Observado: 17520.0
+Predicho: 18132.39911234162, Observado: 17900.0
+Predicho: 18167.595406207078, Observado: 18380.0
 
 ARIMA sin Rolling AIC - Horizonte de 14 días.
-Predicho: 18336.501022687993, Observado: 18180.0
-Predicho: 18288.453832268886, Observado: 17800.0
-Predicho: 18270.162309649975, Observado: 17700.0
-Predicho: 18319.021663912583, Observado: 17700.0
-Predicho: 18320.656000818337, Observado: 17740.0
-Predicho: 18276.12738002089, Observado: 17520.0
-Predicho: 18288.188196688556, Observado: 17900.0
-Predicho: 18324.651578012854, Observado: 18380.0
-Predicho: 18302.700017776267, Observado: 18320.0
-Predicho: 18276.511118561473, Observado: 18500.0
-Predicho: 18304.25344058397, Observado: 18500.0
-Predicho: 18319.423011255032, Observado: 18500.0
-Predicho: 18289.811200601234, Observado: 18200.0
-Predicho: 18285.140411029348, Observado: 18140.0
+Predicho: 18140.785452260676, Observado: 17800.0
+Predicho: 18117.522143842278, Observado: 17700.0
+Predicho: 18159.96247652562, Observado: 17700.0
+Predicho: 18168.04664144553, Observado: 17740.0
+Predicho: 18127.310026760493, Observado: 17520.0
+Predicho: 18132.39911234162, Observado: 17900.0
+Predicho: 18167.595406207078, Observado: 18380.0
+Predicho: 18152.308338391696, Observado: 18320.0
+Predicho: 18125.208597688772, Observado: 18500.0
+Predicho: 18147.233169061987, Observado: 18500.0
+Predicho: 18164.982438430558, Observado: 18500.0
+Predicho: 18139.722683994663, Observado: 18200.0
+Predicho: 18131.390446573707, Observado: 18140.0
+Predicho: 18156.706186686817, Observado: 18300.0
 
 ARIMA sin Rolling AIC - Horizonte de 21 días.
-Predicho: 18336.501022687993, Observado: 18180.0
-Predicho: 18288.453832268886, Observado: 17800.0
-Predicho: 18270.162309649975, Observado: 17700.0
-Predicho: 18319.021663912583, Observado: 17700.0
-Predicho: 18320.656000818337, Observado: 17740.0
-Predicho: 18276.12738002089, Observado: 17520.0
-Predicho: 18288.188196688556, Observado: 17900.0
-Predicho: 18324.651578012854, Observado: 18380.0
-Predicho: 18302.700017776267, Observado: 18320.0
-Predicho: 18276.511118561473, Observado: 18500.0
-Predicho: 18304.25344058397, Observado: 18500.0
-Predicho: 18319.423011255032, Observado: 18500.0
-Predicho: 18289.811200601234, Observado: 18200.0
-Predicho: 18285.140411029348, Observado: 18140.0
-Predicho: 18313.24608258239, Observado: 18300.0
-Predicho: 18308.913168263705, Observado: 17940.0
-Predicho: 18284.90133879078, Observado: 17680.0
-Predicho: 18296.104112293044, Observado: 17700.0
-Predicho: 18314.338613894623, Observado: 17700.0
-Predicho: 18298.70066053642, Observado: 17400.0
-Predicho: 18287.02066167807, Observado: 17740.0
+Predicho: 18140.785452260676, Observado: 17800.0
+Predicho: 18117.522143842278, Observado: 17700.0
+Predicho: 18159.96247652562, Observado: 17700.0
+Predicho: 18168.04664144553, Observado: 17740.0
+Predicho: 18127.310026760493, Observado: 17520.0
+Predicho: 18132.39911234162, Observado: 17900.0
+Predicho: 18167.595406207078, Observado: 18380.0
+Predicho: 18152.308338391696, Observado: 18320.0
+Predicho: 18125.208597688772, Observado: 18500.0
+Predicho: 18147.233169061987, Observado: 18500.0
+Predicho: 18164.982438430558, Observado: 18500.0
+Predicho: 18139.722683994663, Observado: 18200.0
+Predicho: 18131.390446573707, Observado: 18140.0
+Predicho: 18156.706186686817, Observado: 18300.0
+Predicho: 18156.527581820694, Observado: 17940.0
+Predicho: 18133.747968621297, Observado: 17680.0
+Predicho: 18140.83226746794, Observado: 17700.0
+Predicho: 18159.22559895074, Observado: 17700.0
+Predicho: 18147.24569362918, Observado: 17400.0
+Predicho: 18134.29650965423, Observado: 17740.0
+Predicho: 18149.03748652187, Observado: 17800.0
 
 ARIMA sin Rolling AIC - Horizonte de 28 días
-Predicho: 18336.501022687993, Observado: 18180.0
-Predicho: 18288.453832268886, Observado: 17800.0
-Predicho: 18270.162309649975, Observado: 17700.0
-Predicho: 18319.021663912583, Observado: 17700.0
-Predicho: 18320.656000818337, Observado: 17740.0
-Predicho: 18276.12738002089, Observado: 17520.0
-Predicho: 18288.188196688556, Observado: 17900.0
-Predicho: 18324.651578012854, Observado: 18380.0
-Predicho: 18302.700017776267, Observado: 18320.0
-Predicho: 18276.511118561473, Observado: 18500.0
-Predicho: 18304.25344058397, Observado: 18500.0
-Predicho: 18319.423011255032, Observado: 18500.0
-Predicho: 18289.811200601234, Observado: 18200.0
-Predicho: 18285.140411029348, Observado: 18140.0
-Predicho: 18313.24608258239, Observado: 18300.0
-Predicho: 18308.913168263705, Observado: 17940.0
-Predicho: 18284.90133879078, Observado: 17680.0
-Predicho: 18296.104112293044, Observado: 17700.0
-Predicho: 18314.338613894623, Observado: 17700.0
-Predicho: 18298.70066053642, Observado: 17400.0
-Predicho: 18287.02066167807, Observado: 17740.0
-Predicho: 18304.663461321874, Observado: 17800.0
-Predicho: 18309.827226244655, Observado: 17700.0
-Predicho: 18292.358158018404, Observado: 17800.0
-Predicho: 18293.013999675717, Observado: 17800.0
-Predicho: 18308.557736637107, Observado: 17440.0
-Predicho: 18303.242454104384, Observado: 17480.0
-Predicho: 18290.84997301102, Observado: 17620.0
+Predicho: 18140.785452260676, Observado: 17800.0
+Predicho: 18117.522143842278, Observado: 17700.0
+Predicho: 18159.96247652562, Observado: 17700.0
+Predicho: 18168.04664144553, Observado: 17740.0
+Predicho: 18127.310026760493, Observado: 17520.0
+Predicho: 18132.39911234162, Observado: 17900.0
+Predicho: 18167.595406207078, Observado: 18380.0
+Predicho: 18152.308338391696, Observado: 18320.0
+Predicho: 18125.208597688772, Observado: 18500.0
+Predicho: 18147.233169061987, Observado: 18500.0
+Predicho: 18164.982438430558, Observado: 18500.0
+Predicho: 18139.722683994663, Observado: 18200.0
+Predicho: 18131.390446573707, Observado: 18140.0
+Predicho: 18156.706186686817, Observado: 18300.0
+Predicho: 18156.527581820694, Observado: 17940.0
+Predicho: 18133.747968621297, Observado: 17680.0
+Predicho: 18140.83226746794, Observado: 17700.0
+Predicho: 18159.22559895074, Observado: 17700.0
+Predicho: 18147.24569362918, Observado: 17400.0
+Predicho: 18134.29650965423, Observado: 17740.0
+Predicho: 18149.03748652187, Observado: 17800.0
+Predicho: 18156.237095827662, Observado: 17700.0
+Predicho: 18140.753147554136, Observado: 17800.0
+Predicho: 18138.965254243532, Observado: 17800.0
+Predicho: 18153.47460190773, Observado: 17440.0
+Predicho: 18150.67752196598, Observado: 17480.0
+Predicho: 18138.440699120303, Observado: 17620.0
+Predicho: 18144.682593367746, Observado: 18200.0
 </pre></div>
 </div>
 </div>
@@ -1668,7 +1666,7 @@ Predicho: 18290.84997301102, Observado: 17620.0
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/78bda196fe297393b96173940d96ea3872e68be7e470d329a028580b9e992806.png" src="_images/78bda196fe297393b96173940d96ea3872e68be7e470d329a028580b9e992806.png" />
+<img alt="_images/6d97bfc805ef64312316ebe55bbc6b19f27e496f5f9706804db9a094b63152d1.png" src="_images/6d97bfc805ef64312316ebe55bbc6b19f27e496f5f9706804db9a094b63152d1.png" />
 </div>
 </div>
 </section>
@@ -1697,11 +1695,11 @@ Predicho: 18290.84997301102, Observado: 17620.0
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Statistic = 0.181
-P-Value = 6.771501681276408e-39
+P-Value = 6.185593628863644e-39
 Se rechaza la hipótesis nula, por lo tanto los residuales no siguen una distribución normal.
 </pre></div>
 </div>
-<img alt="_images/827d636556bc4f070f18320e21213358277089adfb5b16adc64dfc55f679a315.png" src="_images/827d636556bc4f070f18320e21213358277089adfb5b16adc64dfc55f679a315.png" />
+<img alt="_images/cbcc30017696e0f03a0f86b2a86e6cf9f83f3f7afbc21475a335b8f61c59d383.png" src="_images/cbcc30017696e0f03a0f86b2a86e6cf9f83f3f7afbc21475a335b8f61c59d383.png" />
 </div>
 </div>
 </section>
@@ -1805,35 +1803,35 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
   <tbody>
     <tr>
       <th>7 días</th>
-      <td>173.499328</td>
-      <td>44477.800714</td>
-      <td>0.009711</td>
-      <td>210.897607</td>
-      <td>-0.216733</td>
+      <td>219.664865</td>
+      <td>73846.506079</td>
+      <td>0.012320</td>
+      <td>271.747136</td>
+      <td>-0.160066</td>
     </tr>
     <tr>
       <th>14 días</th>
-      <td>180.512176</td>
-      <td>53403.992870</td>
-      <td>0.010039</td>
-      <td>231.093039</td>
-      <td>0.512447</td>
+      <td>189.093743</td>
+      <td>61763.898455</td>
+      <td>0.010475</td>
+      <td>248.523436</td>
+      <td>0.449780</td>
     </tr>
     <tr>
       <th>21 días</th>
-      <td>171.101329</td>
-      <td>43893.053217</td>
-      <td>0.009534</td>
-      <td>209.506690</td>
-      <td>0.617581</td>
+      <td>175.476340</td>
+      <td>46224.025710</td>
+      <td>0.009771</td>
+      <td>214.997734</td>
+      <td>0.594594</td>
     </tr>
     <tr>
       <th>28 días</th>
-      <td>170.196957</td>
-      <td>45457.343850</td>
-      <td>0.009512</td>
-      <td>213.207279</td>
-      <td>0.586051</td>
+      <td>162.768619</td>
+      <td>47190.801636</td>
+      <td>0.009121</td>
+      <td>217.234439</td>
+      <td>0.571882</td>
     </tr>
   </tbody>
 </table>
@@ -1875,35 +1873,35 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
   <tbody>
     <tr>
       <th>7 días</th>
-      <td>186.872735</td>
-      <td>59979.526985</td>
-      <td>0.010595</td>
-      <td>244.907180</td>
-      <td>-0.640798</td>
+      <td>385.490064</td>
+      <td>164742.771374</td>
+      <td>0.021247</td>
+      <td>405.885170</td>
+      <td>-1.587970</td>
     </tr>
     <tr>
       <th>14 días</th>
-      <td>455.675853</td>
-      <td>302049.143318</td>
-      <td>0.025834</td>
-      <td>549.589977</td>
-      <td>-1.757566</td>
+      <td>295.777042</td>
+      <td>113050.734856</td>
+      <td>0.016301</td>
+      <td>336.230181</td>
+      <td>-0.007106</td>
     </tr>
     <tr>
       <th>21 días</th>
-      <td>373.693861</td>
-      <td>230185.009656</td>
-      <td>0.021186</td>
-      <td>479.775999</td>
-      <td>-1.005492</td>
+      <td>342.942462</td>
+      <td>146494.093840</td>
+      <td>0.018900</td>
+      <td>382.745469</td>
+      <td>-0.284821</td>
     </tr>
     <tr>
       <th>28 días</th>
-      <td>313.185461</td>
-      <td>177886.521436</td>
-      <td>0.017756</td>
-      <td>421.765956</td>
-      <td>-0.619893</td>
+      <td>367.702051</td>
+      <td>169508.340336</td>
+      <td>0.020264</td>
+      <td>411.713906</td>
+      <td>-0.537790</td>
     </tr>
   </tbody>
 </table>
@@ -1944,7 +1942,7 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/9e14ddb169cbf06f93ddc2a5b9ee362977ea0ed9380adcd25c856e1ae9a41b9c.png" src="_images/9e14ddb169cbf06f93ddc2a5b9ee362977ea0ed9380adcd25c856e1ae9a41b9c.png" />
+<img alt="_images/642421b4e0b794625fbef76efc292b84161dd6ca045249933c289b01c2268dde.png" src="_images/642421b4e0b794625fbef76efc292b84161dd6ca045249933c289b01c2268dde.png" />
 </div>
 </div>
 <p>De la gráfica se puede observar que en el horizonte de 14 días, los puntos tienden a alinearse mejor con la diagonal, lo que indica una mejor precisión en las predicciones. Sin embargo, en los horizontes de 7, 21 y 28 días, los puntos se alejan más de la línea, lo que sugiere una menor exactitud en las predicciones, especialmente en los extremos. Esto refleja que el modelo ARIMA ajusta mejor en plazos más largos, pero puede tener dificultades para capturar los valores exactos en ciertos periodos.</p>
@@ -1980,7 +1978,7 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/eb4023d6e3065cfb54ef96dd9686c8816f5a028792f77d219f68036bfdd4cecd.png" src="_images/eb4023d6e3065cfb54ef96dd9686c8816f5a028792f77d219f68036bfdd4cecd.png" />
+<img alt="_images/f0d40f9132badd3c62a35bddd946a7b0c599af68256d74c35c5bd950adb368a2.png" src="_images/f0d40f9132badd3c62a35bddd946a7b0c599af68256d74c35c5bd950adb368a2.png" />
 </div>
 </div>
 <p>Al ver la gráfica notamos que la cobertura que abarca el intervalo de confianza no es muy ancha. Lo que podría indicar una buena precisión en predecir los pronósticos.</p>
@@ -2006,17 +2004,16 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ARIMA Rolling BIC- Horizonte de 7 días.
-predicho = 17620.000000, esperado = 18180.000000
-predicho = 18180.000000, esperado = 17800.000000
+predicho = 18200.000000, esperado = 17800.000000
 predicho = 17800.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17740.000000
 predicho = 17740.000000, esperado = 17520.000000
 predicho = 17520.000000, esperado = 17900.000000
+predicho = 17900.000000, esperado = 18380.000000
 
 ARIMA Rolling BIC - Horizonte de 14 días.
-predicho = 17900.000000, esperado = 18180.000000
-predicho = 18180.000000, esperado = 17800.000000
+predicho = 18380.000000, esperado = 17800.000000
 predicho = 17800.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17740.000000
@@ -2029,10 +2026,10 @@ predicho = 18500.000000, esperado = 18500.000000
 predicho = 18500.000000, esperado = 18500.000000
 predicho = 18500.000000, esperado = 18200.000000
 predicho = 18200.000000, esperado = 18140.000000
+predicho = 18140.000000, esperado = 18300.000000
 
 ARIMA Rolling BIC - Horizonte de 21 días.
-predicho = 18140.000000, esperado = 18180.000000
-predicho = 18180.000000, esperado = 17800.000000
+predicho = 18300.000000, esperado = 17800.000000
 predicho = 17800.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17740.000000
@@ -2052,10 +2049,10 @@ predicho = 17680.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17400.000000
 predicho = 17400.000000, esperado = 17740.000000
+predicho = 17740.000000, esperado = 17800.000000
 
 ARIMA Rolling BIC - Horizonte de 28 días.
-predicho = 17740.000000, esperado = 18180.000000
-predicho = 18180.000000, esperado = 17800.000000
+predicho = 17800.000000, esperado = 17800.000000
 predicho = 17800.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17740.000000
@@ -2082,6 +2079,7 @@ predicho = 17800.000000, esperado = 17800.000000
 predicho = 17800.000000, esperado = 17440.000000
 predicho = 17440.000000, esperado = 17480.000000
 predicho = 17480.000000, esperado = 17620.000000
+predicho = 17620.000000, esperado = 18200.000000
 </pre></div>
 </div>
 </div>
@@ -2126,37 +2124,13 @@ predicho = 17480.000000, esperado = 17620.000000
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/8953bfc32286307d4d7937a54d6bc8677bd58523a5f5998c4fcc3bb147b5a667.png" src="_images/8953bfc32286307d4d7937a54d6bc8677bd58523a5f5998c4fcc3bb147b5a667.png" />
+<img alt="_images/eaaceb52a88f7062ed8b0063d7f8ed41982c6c8a201fdebb7a97ab637c86797d.png" src="_images/eaaceb52a88f7062ed8b0063d7f8ed41982c6c8a201fdebb7a97ab637c86797d.png" />
 </div>
 </div>
 </section>
 <section id="id5">
 <h3><strong>Modelo ARIMA sin rolling forecast</strong><a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <p>Veamos ahora el modelo ARIMA sin rolling forecast teniendo en cuenta los conjuntos anteriormente seleccionados y el mejor orden obtenido por el criterio BIC</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">arima_sin_rolling</span><span class="p">(</span><span class="n">test</span><span class="p">,</span> <span class="n">modelo</span><span class="p">):</span>
-    <span class="c1"># Calcular el número de pasos de predicción basados en el tamaño del conjunto de prueba</span>
-    <span class="n">forecast_steps</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
-    
-    <span class="c1"># Realizar las predicciones para el número de pasos determinado</span>
-    <span class="n">forecast_tipo</span> <span class="o">=</span> <span class="n">modelo</span><span class="o">.</span><span class="n">forecast</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="n">forecast_steps</span><span class="p">)</span>
-    
-    <span class="c1"># Convertir a un array para acceder por índice numérico</span>
-    <span class="n">forecast_values</span> <span class="o">=</span> <span class="n">forecast_tipo</span><span class="o">.</span><span class="n">values</span>
-    
-    <span class="c1"># Imprimir los valores observados y predichos</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">test</span><span class="p">)):</span>
-        <span class="n">observado</span> <span class="o">=</span> <span class="n">test</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>  <span class="c1"># Valores observados</span>
-        <span class="n">predicho</span> <span class="o">=</span> <span class="n">forecast_values</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>  <span class="c1"># Acceder a los valores predichos por índice</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Predicho: </span><span class="si">{</span><span class="n">predicho</span><span class="si">}</span><span class="s1">, Observado: </span><span class="si">{</span><span class="n">observado</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-
-    <span class="c1"># Devolver las predicciones</span>
-    <span class="k">return</span> <span class="n">forecast_values</span>
-</pre></div>
-</div>
-</div>
-</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;ARIMA sin Rolling AIC - Horizonte de 7 días.&#39;</span><span class="p">)</span>
@@ -2175,82 +2149,82 @@ predicho = 17480.000000, esperado = 17620.000000
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ARIMA sin Rolling AIC - Horizonte de 7 días.
-Predicho: 18300.0, Observado: 18180.0
-Predicho: 18300.0, Observado: 17800.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17740.0
-Predicho: 18300.0, Observado: 17520.0
-Predicho: 18300.0, Observado: 17900.0
+Predicho: 18180.0, Observado: 17800.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17740.0
+Predicho: 18180.0, Observado: 17520.0
+Predicho: 18180.0, Observado: 17900.0
+Predicho: 18180.0, Observado: 18380.0
 
 ARIMA sin Rolling AIC - Horizonte de 14 días.
-Predicho: 18300.0, Observado: 18180.0
-Predicho: 18300.0, Observado: 17800.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17740.0
-Predicho: 18300.0, Observado: 17520.0
-Predicho: 18300.0, Observado: 17900.0
-Predicho: 18300.0, Observado: 18380.0
-Predicho: 18300.0, Observado: 18320.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18200.0
-Predicho: 18300.0, Observado: 18140.0
+Predicho: 18180.0, Observado: 17800.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17740.0
+Predicho: 18180.0, Observado: 17520.0
+Predicho: 18180.0, Observado: 17900.0
+Predicho: 18180.0, Observado: 18380.0
+Predicho: 18180.0, Observado: 18320.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18200.0
+Predicho: 18180.0, Observado: 18140.0
+Predicho: 18180.0, Observado: 18300.0
 
 ARIMA sin Rolling AIC - Horizonte de 21 días.
-Predicho: 18300.0, Observado: 18180.0
-Predicho: 18300.0, Observado: 17800.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17740.0
-Predicho: 18300.0, Observado: 17520.0
-Predicho: 18300.0, Observado: 17900.0
-Predicho: 18300.0, Observado: 18380.0
-Predicho: 18300.0, Observado: 18320.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18200.0
-Predicho: 18300.0, Observado: 18140.0
-Predicho: 18300.0, Observado: 18300.0
-Predicho: 18300.0, Observado: 17940.0
-Predicho: 18300.0, Observado: 17680.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17400.0
-Predicho: 18300.0, Observado: 17740.0
+Predicho: 18180.0, Observado: 17800.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17740.0
+Predicho: 18180.0, Observado: 17520.0
+Predicho: 18180.0, Observado: 17900.0
+Predicho: 18180.0, Observado: 18380.0
+Predicho: 18180.0, Observado: 18320.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18200.0
+Predicho: 18180.0, Observado: 18140.0
+Predicho: 18180.0, Observado: 18300.0
+Predicho: 18180.0, Observado: 17940.0
+Predicho: 18180.0, Observado: 17680.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17400.0
+Predicho: 18180.0, Observado: 17740.0
+Predicho: 18180.0, Observado: 17800.0
 
 ARIMA sin Rolling AIC - Horizonte de 28 días
-Predicho: 18300.0, Observado: 18180.0
-Predicho: 18300.0, Observado: 17800.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17740.0
-Predicho: 18300.0, Observado: 17520.0
-Predicho: 18300.0, Observado: 17900.0
-Predicho: 18300.0, Observado: 18380.0
-Predicho: 18300.0, Observado: 18320.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18200.0
-Predicho: 18300.0, Observado: 18140.0
-Predicho: 18300.0, Observado: 18300.0
-Predicho: 18300.0, Observado: 17940.0
-Predicho: 18300.0, Observado: 17680.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17400.0
-Predicho: 18300.0, Observado: 17740.0
-Predicho: 18300.0, Observado: 17800.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17800.0
-Predicho: 18300.0, Observado: 17800.0
-Predicho: 18300.0, Observado: 17440.0
-Predicho: 18300.0, Observado: 17480.0
-Predicho: 18300.0, Observado: 17620.0
+Predicho: 18180.0, Observado: 17800.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17740.0
+Predicho: 18180.0, Observado: 17520.0
+Predicho: 18180.0, Observado: 17900.0
+Predicho: 18180.0, Observado: 18380.0
+Predicho: 18180.0, Observado: 18320.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18200.0
+Predicho: 18180.0, Observado: 18140.0
+Predicho: 18180.0, Observado: 18300.0
+Predicho: 18180.0, Observado: 17940.0
+Predicho: 18180.0, Observado: 17680.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17400.0
+Predicho: 18180.0, Observado: 17740.0
+Predicho: 18180.0, Observado: 17800.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17800.0
+Predicho: 18180.0, Observado: 17800.0
+Predicho: 18180.0, Observado: 17440.0
+Predicho: 18180.0, Observado: 17480.0
+Predicho: 18180.0, Observado: 17620.0
+Predicho: 18180.0, Observado: 18200.0
 </pre></div>
 </div>
 </div>
@@ -2293,7 +2267,7 @@ Predicho: 18300.0, Observado: 17620.0
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/cc35549a1cc1cd4d0644bb64a12511f05137d8fb6aa6ddc426a22765dc9327c7.png" src="_images/cc35549a1cc1cd4d0644bb64a12511f05137d8fb6aa6ddc426a22765dc9327c7.png" />
+<img alt="_images/d62282f0d5c362778e78b08989653c4e02ed00ccae4cd3b9724458964a196360.png" src="_images/d62282f0d5c362778e78b08989653c4e02ed00ccae4cd3b9724458964a196360.png" />
 </div>
 </div>
 </section>
@@ -2322,11 +2296,11 @@ Predicho: 18300.0, Observado: 17620.0
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Statistic = 0.182
-P-Value = 6.968694796312383e-39
+P-Value = 6.36202053226988e-39
 Se rechaza la hipótesis nula, por lo tanto los residuales no siguen una distribución normal.
 </pre></div>
 </div>
-<img alt="_images/b5ae3bf1fcf5061bd498cbef599b3d34ef2048f0b22b0140ab8006ff6c08c6d7.png" src="_images/b5ae3bf1fcf5061bd498cbef599b3d34ef2048f0b22b0140ab8006ff6c08c6d7.png" />
+<img alt="_images/294bd0c5877579d213a49e68748f61563251f4f28a53ab5b083e333669d5f968.png" src="_images/294bd0c5877579d213a49e68748f61563251f4f28a53ab5b083e333669d5f968.png" />
 </div>
 </div>
 </section>
@@ -2429,35 +2403,35 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
   <tbody>
     <tr>
       <th>7 días</th>
-      <td>240.000000</td>
-      <td>94628.571429</td>
-      <td>0.013522</td>
-      <td>307.617573</td>
-      <td>-1.588656</td>
+      <td>231.428571</td>
+      <td>84971.428571</td>
+      <td>0.012966</td>
+      <td>291.498591</td>
+      <td>-0.334829</td>
     </tr>
     <tr>
       <th>14 días</th>
-      <td>177.142857</td>
-      <td>56228.571429</td>
-      <td>0.009852</td>
-      <td>237.125645</td>
-      <td>0.486660</td>
+      <td>182.857143</td>
+      <td>66171.428571</td>
+      <td>0.010126</td>
+      <td>257.238078</td>
+      <td>0.410516</td>
     </tr>
     <tr>
       <th>21 días</th>
-      <td>175.238095</td>
-      <td>54247.619048</td>
-      <td>0.009767</td>
-      <td>232.911183</td>
-      <td>0.527366</td>
+      <td>181.904762</td>
+      <td>59371.428571</td>
+      <td>0.010128</td>
+      <td>243.662530</td>
+      <td>0.479285</td>
     </tr>
     <tr>
       <th>28 días</th>
-      <td>174.285714</td>
-      <td>53771.428571</td>
-      <td>0.009746</td>
-      <td>231.886672</td>
-      <td>0.510340</td>
+      <td>165.714286</td>
+      <td>53714.285714</td>
+      <td>0.009289</td>
+      <td>231.763426</td>
+      <td>0.512701</td>
     </tr>
   </tbody>
 </table>
@@ -2498,35 +2472,35 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
   <tbody>
     <tr>
       <th>7 días</th>
-      <td>200.000000</td>
-      <td>65942.857143</td>
-      <td>0.011351</td>
-      <td>256.793413</td>
-      <td>-0.803930</td>
+      <td>417.142857</td>
+      <td>193257.142857</td>
+      <td>0.022945</td>
+      <td>439.610217</td>
+      <td>-2.035907</td>
     </tr>
     <tr>
       <th>14 días</th>
-      <td>471.428571</td>
-      <td>318514.285714</td>
-      <td>0.026755</td>
-      <td>564.370699</td>
-      <td>-1.907885</td>
+      <td>300.000000</td>
+      <td>121142.857143</td>
+      <td>0.016502</td>
+      <td>348.055825</td>
+      <td>-0.079194</td>
     </tr>
     <tr>
       <th>21 días</th>
-      <td>388.571429</td>
-      <td>243009.523810</td>
-      <td>0.022053</td>
-      <td>492.959962</td>
-      <td>-1.117226</td>
+      <td>357.142857</td>
+      <td>162419.047619</td>
+      <td>0.019645</td>
+      <td>403.012466</td>
+      <td>-0.424490</td>
     </tr>
     <tr>
       <th>28 días</th>
-      <td>325.000000</td>
-      <td>187814.285714</td>
-      <td>0.018445</td>
-      <td>433.375456</td>
-      <td>-0.710298</td>
+      <td>384.285714</td>
+      <td>188628.571429</td>
+      <td>0.021138</td>
+      <td>434.313909</td>
+      <td>-0.711249</td>
     </tr>
   </tbody>
 </table>
@@ -2567,13 +2541,10 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/1d91c203ffab349d2d9cf3e45eba2671fa697fc4e6a984868b5058e4985af572.png" src="_images/1d91c203ffab349d2d9cf3e45eba2671fa697fc4e6a984868b5058e4985af572.png" />
+<img alt="_images/89e8214844ccbb34b6defb99aa296fd99638c719da58db4a15c6aa3143a21281.png" src="_images/89e8214844ccbb34b6defb99aa296fd99638c719da58db4a15c6aa3143a21281.png" />
 </div>
 </div>
 </section>
-</section>
-<section id="conclusiones-criterio-bic">
-<h3><strong>Conclusiones criterio BIC</strong><a class="headerlink" href="#conclusiones-criterio-bic" title="Link to this heading">#</a></h3>
 </section>
 </section>
 <section id="criterio-hqic">
@@ -2601,7 +2572,7 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/eb4023d6e3065cfb54ef96dd9686c8816f5a028792f77d219f68036bfdd4cecd.png" src="_images/eb4023d6e3065cfb54ef96dd9686c8816f5a028792f77d219f68036bfdd4cecd.png" />
+<img alt="_images/f0d40f9132badd3c62a35bddd946a7b0c599af68256d74c35c5bd950adb368a2.png" src="_images/f0d40f9132badd3c62a35bddd946a7b0c599af68256d74c35c5bd950adb368a2.png" />
 </div>
 </div>
 <p>Al ver la gráfica notamos que la cobertura que abarca el intervalo de confianza no es muy ancha. Lo que podría indicar una buena precisión en predecir los pronósticos.</p>
@@ -2627,17 +2598,16 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ARIMA Rolling HQIC- Horizonte de 7 días.
-predicho = 17620.000000, esperado = 18180.000000
-predicho = 18180.000000, esperado = 17800.000000
+predicho = 18200.000000, esperado = 17800.000000
 predicho = 17800.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17740.000000
 predicho = 17740.000000, esperado = 17520.000000
 predicho = 17520.000000, esperado = 17900.000000
+predicho = 17900.000000, esperado = 18380.000000
 
 ARIMA Rolling HQIC - Horizonte de 14 días.
-predicho = 17900.000000, esperado = 18180.000000
-predicho = 18180.000000, esperado = 17800.000000
+predicho = 18380.000000, esperado = 17800.000000
 predicho = 17800.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17740.000000
@@ -2650,10 +2620,10 @@ predicho = 18500.000000, esperado = 18500.000000
 predicho = 18500.000000, esperado = 18500.000000
 predicho = 18500.000000, esperado = 18200.000000
 predicho = 18200.000000, esperado = 18140.000000
+predicho = 18140.000000, esperado = 18300.000000
 
 ARIMA Rolling HQIC - Horizonte de 21 días.
-predicho = 18140.000000, esperado = 18180.000000
-predicho = 18180.000000, esperado = 17800.000000
+predicho = 18300.000000, esperado = 17800.000000
 predicho = 17800.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17740.000000
@@ -2673,10 +2643,10 @@ predicho = 17680.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17400.000000
 predicho = 17400.000000, esperado = 17740.000000
+predicho = 17740.000000, esperado = 17800.000000
 
 ARIMA Rolling HQIC - Horizonte de 28 días.
-predicho = 17740.000000, esperado = 18180.000000
-predicho = 18180.000000, esperado = 17800.000000
+predicho = 17800.000000, esperado = 17800.000000
 predicho = 17800.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17700.000000
 predicho = 17700.000000, esperado = 17740.000000
@@ -2703,6 +2673,7 @@ predicho = 17800.000000, esperado = 17800.000000
 predicho = 17800.000000, esperado = 17440.000000
 predicho = 17440.000000, esperado = 17480.000000
 predicho = 17480.000000, esperado = 17620.000000
+predicho = 17620.000000, esperado = 18200.000000
 </pre></div>
 </div>
 </div>
@@ -2747,7 +2718,7 @@ predicho = 17480.000000, esperado = 17620.000000
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/8953bfc32286307d4d7937a54d6bc8677bd58523a5f5998c4fcc3bb147b5a667.png" src="_images/8953bfc32286307d4d7937a54d6bc8677bd58523a5f5998c4fcc3bb147b5a667.png" />
+<img alt="_images/eaaceb52a88f7062ed8b0063d7f8ed41982c6c8a201fdebb7a97ab637c86797d.png" src="_images/eaaceb52a88f7062ed8b0063d7f8ed41982c6c8a201fdebb7a97ab637c86797d.png" />
 </div>
 </div>
 </section>
@@ -2772,82 +2743,82 @@ predicho = 17480.000000, esperado = 17620.000000
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ARIMA sin Rolling AIC - Horizonte de 7 días.
-Predicho: 18300.0, Observado: 18180.0
-Predicho: 18300.0, Observado: 17800.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17740.0
-Predicho: 18300.0, Observado: 17520.0
-Predicho: 18300.0, Observado: 17900.0
+Predicho: 18180.0, Observado: 17800.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17740.0
+Predicho: 18180.0, Observado: 17520.0
+Predicho: 18180.0, Observado: 17900.0
+Predicho: 18180.0, Observado: 18380.0
 
 ARIMA sin Rolling AIC - Horizonte de 14 días.
-Predicho: 18300.0, Observado: 18180.0
-Predicho: 18300.0, Observado: 17800.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17740.0
-Predicho: 18300.0, Observado: 17520.0
-Predicho: 18300.0, Observado: 17900.0
-Predicho: 18300.0, Observado: 18380.0
-Predicho: 18300.0, Observado: 18320.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18200.0
-Predicho: 18300.0, Observado: 18140.0
+Predicho: 18180.0, Observado: 17800.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17740.0
+Predicho: 18180.0, Observado: 17520.0
+Predicho: 18180.0, Observado: 17900.0
+Predicho: 18180.0, Observado: 18380.0
+Predicho: 18180.0, Observado: 18320.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18200.0
+Predicho: 18180.0, Observado: 18140.0
+Predicho: 18180.0, Observado: 18300.0
 
 ARIMA sin Rolling AIC - Horizonte de 21 días.
-Predicho: 18300.0, Observado: 18180.0
-Predicho: 18300.0, Observado: 17800.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17740.0
-Predicho: 18300.0, Observado: 17520.0
-Predicho: 18300.0, Observado: 17900.0
-Predicho: 18300.0, Observado: 18380.0
-Predicho: 18300.0, Observado: 18320.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18200.0
-Predicho: 18300.0, Observado: 18140.0
-Predicho: 18300.0, Observado: 18300.0
-Predicho: 18300.0, Observado: 17940.0
-Predicho: 18300.0, Observado: 17680.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17400.0
-Predicho: 18300.0, Observado: 17740.0
+Predicho: 18180.0, Observado: 17800.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17740.0
+Predicho: 18180.0, Observado: 17520.0
+Predicho: 18180.0, Observado: 17900.0
+Predicho: 18180.0, Observado: 18380.0
+Predicho: 18180.0, Observado: 18320.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18200.0
+Predicho: 18180.0, Observado: 18140.0
+Predicho: 18180.0, Observado: 18300.0
+Predicho: 18180.0, Observado: 17940.0
+Predicho: 18180.0, Observado: 17680.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17400.0
+Predicho: 18180.0, Observado: 17740.0
+Predicho: 18180.0, Observado: 17800.0
 
 ARIMA sin Rolling AIC - Horizonte de 28 días
-Predicho: 18300.0, Observado: 18180.0
-Predicho: 18300.0, Observado: 17800.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17740.0
-Predicho: 18300.0, Observado: 17520.0
-Predicho: 18300.0, Observado: 17900.0
-Predicho: 18300.0, Observado: 18380.0
-Predicho: 18300.0, Observado: 18320.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18500.0
-Predicho: 18300.0, Observado: 18200.0
-Predicho: 18300.0, Observado: 18140.0
-Predicho: 18300.0, Observado: 18300.0
-Predicho: 18300.0, Observado: 17940.0
-Predicho: 18300.0, Observado: 17680.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17400.0
-Predicho: 18300.0, Observado: 17740.0
-Predicho: 18300.0, Observado: 17800.0
-Predicho: 18300.0, Observado: 17700.0
-Predicho: 18300.0, Observado: 17800.0
-Predicho: 18300.0, Observado: 17800.0
-Predicho: 18300.0, Observado: 17440.0
-Predicho: 18300.0, Observado: 17480.0
-Predicho: 18300.0, Observado: 17620.0
+Predicho: 18180.0, Observado: 17800.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17740.0
+Predicho: 18180.0, Observado: 17520.0
+Predicho: 18180.0, Observado: 17900.0
+Predicho: 18180.0, Observado: 18380.0
+Predicho: 18180.0, Observado: 18320.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18500.0
+Predicho: 18180.0, Observado: 18200.0
+Predicho: 18180.0, Observado: 18140.0
+Predicho: 18180.0, Observado: 18300.0
+Predicho: 18180.0, Observado: 17940.0
+Predicho: 18180.0, Observado: 17680.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17400.0
+Predicho: 18180.0, Observado: 17740.0
+Predicho: 18180.0, Observado: 17800.0
+Predicho: 18180.0, Observado: 17700.0
+Predicho: 18180.0, Observado: 17800.0
+Predicho: 18180.0, Observado: 17800.0
+Predicho: 18180.0, Observado: 17440.0
+Predicho: 18180.0, Observado: 17480.0
+Predicho: 18180.0, Observado: 17620.0
+Predicho: 18180.0, Observado: 18200.0
 </pre></div>
 </div>
 </div>
@@ -2890,7 +2861,7 @@ Predicho: 18300.0, Observado: 17620.0
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/1d707458c4e7eab611007a50a6bfb6e809d98079f3413c73647a1d9739c3a79f.png" src="_images/1d707458c4e7eab611007a50a6bfb6e809d98079f3413c73647a1d9739c3a79f.png" />
+<img alt="_images/d62282f0d5c362778e78b08989653c4e02ed00ccae4cd3b9724458964a196360.png" src="_images/d62282f0d5c362778e78b08989653c4e02ed00ccae4cd3b9724458964a196360.png" />
 </div>
 </div>
 </section>
@@ -2919,11 +2890,11 @@ Predicho: 18300.0, Observado: 17620.0
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Statistic = 0.182
-P-Value = 6.968694796312383e-39
+P-Value = 6.36202053226988e-39
 Se rechaza la hipótesis nula, por lo tanto los residuales no siguen una distribución normal.
 </pre></div>
 </div>
-<img alt="_images/b5ae3bf1fcf5061bd498cbef599b3d34ef2048f0b22b0140ab8006ff6c08c6d7.png" src="_images/b5ae3bf1fcf5061bd498cbef599b3d34ef2048f0b22b0140ab8006ff6c08c6d7.png" />
+<img alt="_images/294bd0c5877579d213a49e68748f61563251f4f28a53ab5b083e333669d5f968.png" src="_images/294bd0c5877579d213a49e68748f61563251f4f28a53ab5b083e333669d5f968.png" />
 </div>
 </div>
 </section>
@@ -3026,35 +2997,35 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
   <tbody>
     <tr>
       <th>7 días</th>
-      <td>240.000000</td>
-      <td>94628.571429</td>
-      <td>0.013522</td>
-      <td>307.617573</td>
-      <td>-1.588656</td>
+      <td>231.428571</td>
+      <td>84971.428571</td>
+      <td>0.012966</td>
+      <td>291.498591</td>
+      <td>-0.334829</td>
     </tr>
     <tr>
       <th>14 días</th>
-      <td>177.142857</td>
-      <td>56228.571429</td>
-      <td>0.009852</td>
-      <td>237.125645</td>
-      <td>0.486660</td>
+      <td>182.857143</td>
+      <td>66171.428571</td>
+      <td>0.010126</td>
+      <td>257.238078</td>
+      <td>0.410516</td>
     </tr>
     <tr>
       <th>21 días</th>
-      <td>175.238095</td>
-      <td>54247.619048</td>
-      <td>0.009767</td>
-      <td>232.911183</td>
-      <td>0.527366</td>
+      <td>181.904762</td>
+      <td>59371.428571</td>
+      <td>0.010128</td>
+      <td>243.662530</td>
+      <td>0.479285</td>
     </tr>
     <tr>
       <th>28 días</th>
-      <td>174.285714</td>
-      <td>53771.428571</td>
-      <td>0.009746</td>
-      <td>231.886672</td>
-      <td>0.510340</td>
+      <td>165.714286</td>
+      <td>53714.285714</td>
+      <td>0.009289</td>
+      <td>231.763426</td>
+      <td>0.512701</td>
     </tr>
   </tbody>
 </table>
@@ -3095,35 +3066,35 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
   <tbody>
     <tr>
       <th>7 días</th>
-      <td>200.000000</td>
-      <td>65942.857143</td>
-      <td>0.011351</td>
-      <td>256.793413</td>
-      <td>-0.803930</td>
+      <td>417.142857</td>
+      <td>193257.142857</td>
+      <td>0.022945</td>
+      <td>439.610217</td>
+      <td>-2.035907</td>
     </tr>
     <tr>
       <th>14 días</th>
-      <td>471.428571</td>
-      <td>318514.285714</td>
-      <td>0.026755</td>
-      <td>564.370699</td>
-      <td>-1.907885</td>
+      <td>300.000000</td>
+      <td>121142.857143</td>
+      <td>0.016502</td>
+      <td>348.055825</td>
+      <td>-0.079194</td>
     </tr>
     <tr>
       <th>21 días</th>
-      <td>388.571429</td>
-      <td>243009.523810</td>
-      <td>0.022053</td>
-      <td>492.959962</td>
-      <td>-1.117226</td>
+      <td>357.142857</td>
+      <td>162419.047619</td>
+      <td>0.019645</td>
+      <td>403.012466</td>
+      <td>-0.424490</td>
     </tr>
     <tr>
       <th>28 días</th>
-      <td>325.000000</td>
-      <td>187814.285714</td>
-      <td>0.018445</td>
-      <td>433.375456</td>
-      <td>-0.710298</td>
+      <td>384.285714</td>
+      <td>188628.571429</td>
+      <td>0.021138</td>
+      <td>434.313909</td>
+      <td>-0.711249</td>
     </tr>
   </tbody>
 </table>
@@ -3164,17 +3135,15 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/1d91c203ffab349d2d9cf3e45eba2671fa697fc4e6a984868b5058e4985af572.png" src="_images/1d91c203ffab349d2d9cf3e45eba2671fa697fc4e6a984868b5058e4985af572.png" />
+<img alt="_images/89e8214844ccbb34b6defb99aa296fd99638c719da58db4a15c6aa3143a21281.png" src="_images/89e8214844ccbb34b6defb99aa296fd99638c719da58db4a15c6aa3143a21281.png" />
 </div>
 </div>
 </section>
-</section>
-<section id="conclusiones-criterio-hqic">
-<h3><strong>Conclusiones criterio HQIC</strong><a class="headerlink" href="#conclusiones-criterio-hqic" title="Link to this heading">#</a></h3>
 </section>
 </section>
 <section id="conclusiones">
 <h2><strong>Conclusiones</strong><a class="headerlink" href="#conclusiones" title="Link to this heading">#</a></h2>
+<p>Aunque los resultados obtenidos con el criterio de Akaike (AIC) mostraron un mejor ajuste del modelo en comparación con otros criterios, como el BIC o el HQIC, los modelos aún no lograron generar predicciones precisas. Las métricas, como el coeficiente de determinación (R2), indican que el ajuste a los datos de la serie temporal es insuficiente. Además, las pruebas de normalidad de los residuos sugieren que no siguen una distribución normal, lo que pone en duda la confiabilidad de las predicciones.</p>
 </section>
 </section>
 
@@ -3285,7 +3254,6 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"><strong>Gráficos de correlación</strong></a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones-criterio-bic"><strong>Conclusiones criterio BIC</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#criterio-hqic"><strong>Criterio HQIC</strong></a><ul class="nav section-nav flex-column">
@@ -3302,7 +3270,6 @@ Se rechaza la hipótesis nula, los residuales están correlacionados.
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16"><strong>Gráficos de correlación</strong></a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones-criterio-hqic"><strong>Conclusiones criterio HQIC</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones"><strong>Conclusiones</strong></a></li>
