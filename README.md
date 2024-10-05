@@ -7,5 +7,3 @@
 ### University: Universidad del Norte
 
 ### Date: September 2024
-
-## I love data science, so much
